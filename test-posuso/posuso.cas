@@ -44,14 +44,14 @@ INITIAL CONDITIONS = 'CONSTANT DEPTH'
 / BOUNDARY CONDITIONS
 /---------------------------------------------------------------------
 /
-PRESCRIBED FLOWRATES			= 4037.5;4037.5
+PRESCRIBED FLOWRATES			= 4037.5;-4037.5
 /PRESCRIBED ELEVATIONS			= 0; 275
 /----------------------------------------------------------------------/
 /  BOTTOM FRICTION                                                     /
 /----------------------------------------------------------------------/
 /
-/LAW OF BOTTOM FRICTION			= 4 / Manning
-/FRICTION COEFFICIENT			= 0.024
+LAW OF BOTTOM FRICTION			= 4 / Manning
+FRICTION COEFFICIENT			= 0.024
 /
 /----------------------------------------------------------------------/
 /  TURBULENCE                                                          /
@@ -72,17 +72,17 @@ VELOCITY DIFFUSIVITY			= 1.E-6
 /----------------------------------------------------------------------/
 /
 MASS-BALANCE				= YES
-/TREATMENT OF THE LINEAR SYSTEM		= 2
-/SUPG OPTION                             = 0;0
-/TYPE OF ADVECTION                       = 14;5
+TREATMENT OF THE LINEAR SYSTEM		= 2
+SUPG OPTION                             = 0;0
+TYPE OF ADVECTION                       = 14;5
 SOLVER                                  = 1
-/SOLVER OPTION				= 3
-/MASS-LUMPING ON H			= 1
-/IMPLICITATION FOR DEPTH			= 1.
-/IMPLICITATION FOR VELOCITY		= 1.
-/H CLIPPING				= NO
-/TREATMENT OF NEGATIVE DEPTHS            = 2
-/CONTINUITY CORRECTION                   =YES
+SOLVER OPTION				= 3
+MASS-LUMPING ON H			= 1
+IMPLICITATION FOR DEPTH			= 1.
+IMPLICITATION FOR VELOCITY		= 1.
+H CLIPPING				= NO
+TREATMENT OF NEGATIVE DEPTHS            = 2
+CONTINUITY CORRECTION                   =YES
 /
 /---------------------------------------------------------------------/
 / END OF FILE
