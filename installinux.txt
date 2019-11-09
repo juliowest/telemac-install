@@ -1,0 +1,21 @@
+#!/bin/bash
+sudo apt-get update
+sudo apt-get install -y build-essential
+sudo apt-get install -y python
+sudo apt-get install -y python-numpy
+sudo apt-get install -y gfortran
+sudo apt-get install -y subversion
+
+cd /etc/subversion
+sudo sed -i 's/# store-plaintext-passwords = no/store-plaintext-passwords = yes/' servers
+svn up
+cd
+cd .subversion
+sudo sed -i 's/# store-plaintext-passwords = no/store-plaintext-passwords = yes/' servers
+svn up
+cd
+svn co http://svn.opentelemac.org/svn/opentelemac/tags/v7p2r0 ~/telemac-mascaret/v7p2r0 --username=ot-svn-public --password=telemac1*
+
+cd /telemac-mascaret/v7p2r0/configs
+sed -i 's/systel.edf.cfg/systel.cis-ubuntu.cfg/'  pysource.template.sh
+
