@@ -18,9 +18,9 @@ svn co http://svn.opentelemac.org/svn/opentelemac/tags/v7p2r0 ~/telemac-mascaret
 
 cd telemac-mascaret/v7p2r0/configs
 sed -i 's/systel.edf.cfg/systel.cis-ubuntu.cfg/'  pysource.template.sh
-sed -i 's/C9.gfortranHPC.debug/ubugfortransdbg/'  pysource.template.sh
+sed -i 's/C9.gfortranHPC.debug/ubugfortrans/'  pysource.template.sh
 sed -i 's#home/I21149/Modeles/TELEMAC/chromis#home/ubuntu/telemac-mascaret/v7p2r0#'  pysource.template.sh
-sed -i 's/ubugfmpich2/ubugfortransdbg/' systel.cis-ubuntu.cfg
+sed -i 's/ubugfmpich2/ubugfortrans/' systel.cis-ubuntu.cfg
 source pysource.template.sh
 config.py
 cd
