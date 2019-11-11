@@ -19,7 +19,7 @@ RESULTS FILE				= rimac_tel.slf
 /
 TITLE                                   = 'POSUDO RIVER'
 LISTING PRINTOUT PERIOD                 = 1
-GRAPHIC PRINTOUT PERIOD                 = 60
+GRAPHIC PRINTOUT PERIOD                 = 1
 VARIABLES FOR GRAPHIC PRINTOUTS         = 'U,V,B,H,S,F'
 /
 /----------------------------------------------------------------------/
@@ -28,12 +28,12 @@ VARIABLES FOR GRAPHIC PRINTOUTS         = 'U,V,B,H,S,F'
 /
 INITIAL TIME SET TO ZERO                = YES
 TIME STEP			        = 0.2 
-DURATION                                = 43200
+DURATION                                = 420
 
 /---------------------------------------------------------------------
 / INITIAL CONDITIONS
 /---------------------------------------------------------------------
-INITIAL DEPTH      = 0.5
+INITIAL DEPTH      = 3
 INITIAL CONDITIONS = 'CONSTANT DEPTH'
 
 /PREVIOUS COMPUTATION FILE = 'hort_start.slf'
@@ -44,7 +44,7 @@ INITIAL CONDITIONS = 'CONSTANT DEPTH'
 / BOUNDARY CONDITIONS
 /---------------------------------------------------------------------
 /
-PRESCRIBED FLOWRATES			= 4037.5;-4037.5
+PRESCRIBED FLOWRATES			= -4037.5;4037.5
 /PRESCRIBED ELEVATIONS			= 0; 275
 /----------------------------------------------------------------------/
 /  BOTTOM FRICTION                                                     /
