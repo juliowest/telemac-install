@@ -25,3 +25,5 @@ source pysource.template.sh
 config.py
 cd
 compileTELEMAC.py 
+echo 'source /home/ubuntu/telemac-mascaret/v7p2r0/configs/pysource.template.sh' >> ~/.bashrc
+source ~/.bashrc
